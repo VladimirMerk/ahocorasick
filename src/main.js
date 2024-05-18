@@ -87,6 +87,7 @@
             if (this.output[state].length) {
                 var foundStrs = this.output[state];
                 results.push([i, foundStrs]);
+                return results; // Break after first match
             }
         }
 
